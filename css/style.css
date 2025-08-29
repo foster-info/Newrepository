@@ -101,7 +101,7 @@ ul.social-links li a i {
 .overlay-lighter:before {
   content: '';
   background: -webkit-linear-gradient(-45deg, #1e5799 0%, #1d1546 0%, #1a0b25 100%, #207cca 100%);
-  opacity: .20;
+  opacity: .50;
   position: absolute;
   top: 0;
   left: 0;
@@ -110,7 +110,7 @@ ul.social-links li a i {
 }
 
 .text-overlay:after {
-  content: 'CONFERENCE';
+  content: 'CAB-2025';
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 215px;
@@ -282,6 +282,7 @@ button:hover {
   margin-top: 25px;
   text-align: center;
   margin-bottom: 40px;
+  width: 100%;
 }
 
 .section-title h3 {
@@ -1810,7 +1811,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .ticket-feature .block-2 {
   position: relative;
-  padding: 150px 10%;
+  padding: 50px 10%;
   height: 100%;
   background: #ff6600;
 }
@@ -1947,6 +1948,21 @@ select.form-control:not([size]):not([multiple]) {
   margin-bottom: 10px;
 }
 
+/* 
+.pricing.two    .pricing-item:first-child {
+  border: 1px solid #fc9552; 
+}
+
+.pricing.two  .pricing-item:nth-child(2) {
+  border: 1px solid #fc9552;
+}
+
+.pricing.two   .pricing-item:nth-child(3) {
+  border: 1px solid #fc9552;
+} */
+
+
+
 @media (max-width: 991px) {
   .pricing .pricing-item {
     margin-bottom: 30px;
@@ -1954,16 +1970,21 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .pricing .pricing-item .pricing-heading {
-  padding: 20px 40px 30px 40px;
   background: #fafafa;
-  border-bottom: 1px solid #e5e5e5;
+  /* border-bottom: 1px solid #e5e5e5; */
 }
 
+.pricing .pricing-item .pricing-heading .title {
+  padding: 10px 5px 1px 10px;
+  background: turquoise;
+}
+
+
 .pricing .pricing-item .pricing-heading .title h6 {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 400;
   line-height: 50px;
-  border-bottom: 1px solid #e5e5e5;
+  /* border-bottom: 1px solid #e5e5e5; */
 }
 
 .pricing .pricing-item .pricing-heading .price {
@@ -1971,15 +1992,16 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .pricing .pricing-item .pricing-heading .price h2 {
-  font-size: 1.25rem;
-  font-weight: 350;
-  margin-bottom: 0px;
+  font-size: 1.025rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+  margin-right: 10px;
   font-family:'open sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  line-height: 1.25;
+  line-height: 1.35;
 }
 
 .pricing .pricing-item .pricing-heading .price h2 span {
-  font-size: 1.5625rem;
+  font-weight: bold;
 }
 
 .pricing .pricing-item .pricing-body {
@@ -2069,8 +2091,9 @@ select.form-control:not([size]):not([multiple]) {
 
 .pricing.two .pricing-item .pricing-heading .price {
   position: relative;
+  padding-left: 20px;
 }
-
+/* 
 .pricing.two .pricing-item .pricing-heading:before {
   content: '';
   position: absolute;
@@ -2081,7 +2104,7 @@ select.form-control:not([size]):not([multiple]) {
   border-style: solid;
   border-width: 64px 500px 0 0;
   border-color: #fafafa transparent transparent transparent;
-}
+} */
 
 .pricing.two .pricing-item .pricing-body {
   padding: 70px 40px 45px;
@@ -2624,7 +2647,7 @@ select.form-control:not([size]):not([multiple]) {
   margin-bottom: 10px;
 }
 .speakers-full-width .speaker-slider .speaker-image .primary-overlay a {
-  margin-top: 20%;
+  margin-top: 10%;
   min-width: 50%;
 }
 
@@ -2918,6 +2941,33 @@ select.form-control:not([size]):not([multiple]) {
 
 .news   { 
   position: relative;
+}
+.news [class*=col-]:first-child .blog-post   {
+  border: 10px solid  #F0D260; 
+}
+.news [class*=col-]:first-child .blog-post .date  {
+ background:  #F0D260; 
+}
+ 
+.news [class*=col-]:nth-child(3) .blog-post {
+  border: 10px solid  rgb(118, 96, 240);
+}
+.news  [class*=col-]:nth-child(3) .blog-post .date{
+  background: rgb(118, 96, 240); 
+}
+
+.news [class*=col-]:nth-child(4) .blog-post {
+  border: 10px solid  rgb(129, 105, 8);
+}
+.news  [class*=col-]:nth-child(4) .blog-post .date{
+  background: rgb(129, 105, 8);
+} 
+
+.news [class*=col-]:nth-child(2) .blog-post {
+  border: 10px solid  rgb(28, 129, 8)
+}
+.news  [class*=col-]:nth-child(2) .blog-post .date{
+  background: rgb(28, 129, 8);
 }
 
 .news .blog-post {
