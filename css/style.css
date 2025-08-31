@@ -2115,13 +2115,6 @@ line-height: 1;
   display: flex;
   flex-wrap: wrap;
 }
-
-@media (max-width: 991px) {
-  .pricing.two .pricing-item {
-    margin-bottom: 30px;
-  }
-}
-
 .pricing.two .pricing-item .pricing-heading {
 position: relative; 
     background: white;
