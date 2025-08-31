@@ -1183,6 +1183,7 @@ select.form-control:not([size]):not([multiple]) {
   .about .image-block {
     margin-bottom: 30px;
     text-align: center;
+    width: 150px;
   }
 }
 
@@ -1707,7 +1708,8 @@ select.form-control:not([size]):not([multiple]) {
   text-align: left;
   font-size: 1.05rem;
   line-height: 1.2;
-  background: #006198;
+  background: #a82237;
+  /* #006198 */
 }
 
 .schedule.two .schedule-tab ul li.nav-item a span {
@@ -1840,6 +1842,15 @@ select.form-control:not([size]):not([multiple]) {
   padding: 5px 5px 5px;
   background: #ebebeb;
   display: flex;
+}
+.schedule.two .schedule-contents .subject {
+     padding: 5px 5px 5px;
+    background: #4ac565;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-family: "math";
+    text-align: center;
+    font-weight: 700;
 }
 
 .schedule.two .schedule-contents .schedule-item li.headings div {
@@ -2036,16 +2047,16 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .ticket-feature .block-2 [class*="col-"]:first-child {
-  border-right: 1px solid #fc9552;
-  border-bottom: 1px solid #fc9552;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 
 .ticket-feature .block-2 [class*="col-"]:nth-child(2) {
-  border-bottom: 1px solid #fc9552;
+  border-bottom: 1px solid #fff;
 }
 
 .ticket-feature .block-2 [class*="col-"]:nth-child(3) {
-  border-right: 1px solid #fc9552;
+  border-right: 1px solid #fff;
 }
 
 .ticket-feature .block-2 .service-item {
@@ -2165,20 +2176,24 @@ select.form-control:not([size]):not([multiple]) {
 
 .pricing .pricing-item {
   overflow: hidden;
+  background: #fafafa;
 }
 
-/* 
-.pricing.two    .pricing-item:first-child {
-  border: 1px solid #fc9552; 
+ 
+.pricing   .pricing-item:first-child  .pricing-heading{
+   background: #D9D9D9; 
+       padding: 5px 10px;
 }
 
-.pricing.two  .pricing-item:nth-child(2) {
-  border: 1px solid #fc9552;
+.pricing .pricing-item:nth-child(2)  .pricing-heading {
+   background: #853636;
+       padding: 5px 10px;
 }
 
-.pricing.two   .pricing-item:nth-child(3) {
-  border: 1px solid #fc9552;
-} */
+.pricing   .pricing-item:nth-child(3)  .pricing-heading {
+   background: #15580c;
+       padding: 5px 10px;
+} 
 
 @media (max-width: 991px) {
   .pricing .pricing-item {
@@ -2262,7 +2277,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .pricing .pricing-item.featured .pricing-heading .price {
-  margin-top: 28px;
+  margin-top: 2px;
 }
 
 .pricing .pricing-item.featured .pricing-heading .price h2 {
@@ -2308,6 +2323,13 @@ select.form-control:not([size]):not([multiple]) {
   font-weight: 600;
   font-size: 1.2rem;
   font-family: monospace;
+}
+.pricing.two .pricing-item .pricing-heading .price span {
+padding-top: 5px;
+    padding-bottom : 5px;
+    color: #474747;
+    font-family: math;
+    text-align: left;
 }
 .pricing.two .pricing-item .pricing-heading .price h2 {
   font-size: 14px;
@@ -2438,7 +2460,7 @@ select.form-control:not([size]):not([multiple]) {
   width: 48%;
    background:  white;
   padding: 10px 20px;
-  margin: 0 1px;
+    margin: 1px 0;
 }
 @media screen and (max-width: 63.9988em) {
   .map .block .post-exerpts { 
@@ -4050,7 +4072,15 @@ ul.pagination .active a {
   border-radius: 0;
   border: none;
   margin-bottom: 10px;
+} 
+
+@media (min-width: 992px) {
+    .news-hr .card-body {
+      padding: 0;
+    }  
 }
+
+
 /* .news-hr .accordion-block #accordion .card:first-child:nth-last-child(3), 
    .news-hr .accordion-block #accordion .card:nth-last-child(3)~.speakers-infos
  {
@@ -4167,6 +4197,7 @@ ul.pagination .active a {
 
 .news-hr .news-post-hr .post-contents .post-exerpts p {
   font-size: 15px;
+  text-align: justify;
 }
 
 .news-hr .news-post-hr .post-contents .date {
