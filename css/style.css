@@ -1796,6 +1796,11 @@ select.form-control:not([size]):not([multiple]) {
   display: inline-block;
   padding-left: 30px;
 }
+@media (max-width: 480px) {
+  .schedule.two .schedule-contents .schedule-item ul li div {
+    padding-left : 0px;
+  }
+}
 
 .schedule.two .schedule-contents .schedule-item ul li .time {
   width: 30%;
@@ -1930,6 +1935,7 @@ select.form-control:not([size]):not([multiple]) {
   div
   span.time {
   margin-left: 0px;
+  font-weight: bold;
 }
 
 .schedule.two
@@ -3429,7 +3435,9 @@ select.form-control:not([size]):not([multiple]) {
   max-width: 46rem;
   margin: 15px auto;
 }
-
+.block-figures-left .key-figures:nth-child(2) .key-figures-number {
+  color: white;
+}
 @media screen and (max-width: 63.9988em) {
   .block-figures-left,
   .block-figures-right {
