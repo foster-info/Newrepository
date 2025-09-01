@@ -358,6 +358,8 @@ button:hover {
   border-bottom: 1px solid #e5e5e5;
 }
 
+
+
 .section-title {
   margin-top: 25px;
   text-align: center;
@@ -1995,14 +1997,19 @@ select.form-control:not([size]):not([multiple]) {
 .ticket-feature {
   overflow: hidden;
 }
+.ticket-feature .section-title {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 80%;
+    position: relative;
+}
 
 .ticket-feature .block {
   position: relative;
   padding-top: 150px;
   padding-bottom: 110px;
 }
-
-.ticket-feature .block .section-title,
+ 
 .ticket-feature .block a {
   position: relative;
   margin: 30px 0;
@@ -2087,6 +2094,7 @@ select.form-control:not([size]):not([multiple]) {
 .ticket-feature .block-2 .service-item {
   padding: 30px;
   text-align: center;
+  overflow: hidden;
 }
 
 .ticket-feature .block-2 .service-item i,
@@ -3515,6 +3523,7 @@ select.form-control:not([size]):not([multiple]) {
   font-family: math;
   border-bottom: 1px solid white;
   line-height: 1.1;
+      margin-top: 10px;
 }
 .wp-block-key-figures-intro p span {
   color: #fff;
