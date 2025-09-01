@@ -2004,6 +2004,20 @@ select.form-control:not([size]):not([multiple]) {
     position: relative;
 }
 
+.ticket-feature .section-title .informationssup p{
+   
+    text-align: left; 
+}
+
+.ticket-feature .section-title .informationssup p:before {
+    position: absolute;
+    left: -25px;
+    content: "\f10c";
+    font-family: FontAwesome;
+    color: #4ac565;
+}
+
+
 .ticket-feature .block {
   position: relative;
   padding-top: 150px;
@@ -2093,8 +2107,16 @@ select.form-control:not([size]):not([multiple]) {
 
 .ticket-feature .block-2 .service-item {
   padding: 30px;
-  text-align: center;
-  overflow: hidden;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (max-width: 767px) {
+ .ticket-feature .block-2 .service-item {
+padding: 30px 0;
+}
 }
 
 .ticket-feature .block-2 .service-item i,
