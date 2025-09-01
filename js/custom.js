@@ -6,7 +6,7 @@
         //  Screenshot Slider
         // -----------------------------
         $('.speaker-slider').slick({
-            slidesToShow: 3,
+            slidesToShow: 2,
             centerMode: true,
             infinite: true,
             autoplay: true,
@@ -15,13 +15,13 @@
                 {
                     breakpoint: 1440,
                     settings: {
-                        slidesToShow: 3
+                        slidesToShow: 2
                     }
                 },
                 {
                     breakpoint: 768,
                     settings: {
-                        slidesToShow: 2
+                        slidesToShow: 1
                     }
                 },
                 {
