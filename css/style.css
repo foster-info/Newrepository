@@ -1,6 +1,23 @@
 /*=== MEDIA QUERY ===*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|open sans:300,400,500,700");
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,700,900");
+
+@font-face {
+  font-family: "Avenir Next"; /* You can choose a custom name here */
+  src: url("/fonts/AvenirNextLTPro-Regular.woff2") format("woff2"),
+    url("/fonts/AvenirNextLTPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url("/fonts/AvenirNextLTPro-Bold.woff2") format("woff2"),
+    url("/fonts/AvenirNextLTPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
 html {
   font-size: 16px;
 }
@@ -165,18 +182,16 @@ ul.pagination .active a,
   bottom: 0;
 }
 @media (max-width: 992px) {
-    .text-overlay:after {
-    content: "CAB-2025"; 
+  .text-overlay:after {
+    content: "CAB-2025";
     font-weight: 600;
-    font-size: 115px; 
+    font-size: 115px;
     line-height: 90px;
-    height: 100px; 
+    height: 100px;
     top: 60%;
-    left: 50%; 
-}
-
+    left: 50%;
   }
-
+}
 
 .overlay-dark:before {
   content: "";
@@ -187,7 +202,7 @@ ul.pagination .active a,
     #1a0b25 100%,
     #207cca 100%
   );
-  opacity: 0.75;
+  opacity: 0.35;
   position: absolute;
   top: 0;
   left: 0;
@@ -218,7 +233,6 @@ ul.pagination .active a,
   -webkit-transform: skewX(-20deg);
   transform: skewX(-20deg);
 }
- 
 
 span.alternate {
   color: #4ac565;
@@ -1006,8 +1020,6 @@ select.form-control:not([size]):not([multiple]) {
   position: relative;
 }
 
-
-
 @media (max-width: 1024px) {
   .banner {
     padding: 100px 0;
@@ -1104,25 +1116,21 @@ select.form-control:not([size]):not([multiple]) {
   overflow: hidden;
 }
 @media (max-width: 992px) {
-    .banner-two {
-   padding: 100px 0 0px; 
+  .banner-two {
+    padding: 100px 0 0px;
   }
-
 }
-
 
 .banner-two .block h1 {
   color: #4ac565;
   font-size: 88px;
 }
 @media (max-width: 992px) {
-    .banner-two .block h1{
-       font-size: 88px;
+  .banner-two .block h1 {
+    font-size: 88px;
     line-height: 80px;
     margin-top: 40px;
-
   }
-
 }
 
 .banner-two .block h2 {
@@ -1132,26 +1140,23 @@ select.form-control:not([size]):not([multiple]) {
   margin-bottom: 10px;
 }
 @media (max-width: 992px) {
-   .banner-two .block h2  {
+  .banner-two .block h2 {
     font-weight: 600;
     text-transform: uppercase;
     font-size: 44px;
     margin-bottom: 10px;
     letter-spacing: -0px;
-}
-
-
+  }
 }
 
 .banner-two .block h3 {
   font-size: 54px;
 }
 @media (max-width: 992px) {
-   .banner-two .block h3  {
+  .banner-two .block h3 {
     font-size: 34px;
+  }
 }
-}
-
 
 .banner-two .block h6 {
   margin-top: 48px;
@@ -1159,12 +1164,11 @@ select.form-control:not([size]):not([multiple]) {
   margin-bottom: 60px;
 }
 @media (max-width: 992px) {
-.banner-two .block h6 {
+  .banner-two .block h6 {
     margin-top: 18px;
     font-weight: 500;
     margin-bottom: 60px;
-}
-
+  }
 }
 
 .about .image-block {
@@ -1695,7 +1699,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .schedule.two .schedule-tab ul li.nav-item a {
-  font-family: "math", sans-serif;
+  font-family: math, sans-serif;
   color: #ffffff;
   text-transform: capitalize;
   font-weight: 300;
@@ -1704,7 +1708,7 @@ select.form-control:not([size]):not([multiple]) {
   border: 1px solid #e5e5e5;
   position: relative;
   padding: 5px 5px 5px 10px;
-  font-family: "math";
+  font-family: math;
   text-align: left;
   font-size: 1.05rem;
   line-height: 1.2;
@@ -1844,13 +1848,13 @@ select.form-control:not([size]):not([multiple]) {
   display: flex;
 }
 .schedule.two .schedule-contents .subject {
-     padding: 5px 5px 5px;
-    background: #4ac565;
-    color: #ffffff;
-    text-transform: capitalize;
-    font-family: "math";
-    text-align: center;
-    font-weight: 700;
+  padding: 5px 5px 5px;
+  background: #4ac565;
+  color: #ffffff;
+  text-transform: capitalize;
+  font-family: math;
+  text-align: center;
+  font-weight: 700;
 }
 
 .schedule.two .schedule-contents .schedule-item li.headings div {
@@ -2177,23 +2181,27 @@ select.form-control:not([size]):not([multiple]) {
 .pricing .pricing-item {
   overflow: hidden;
   background: #fafafa;
+  margin: 0 15px;
 }
 
- 
-.pricing   .pricing-item:first-child  .pricing-heading{
-   background: #D9D9D9; 
-       padding: 5px 10px;
+.pricing .speaker-slider .pricing-item {
+  margin: 0 15px;
 }
 
-.pricing .pricing-item:nth-child(2)  .pricing-heading {
-   background: #853636;
-       padding: 5px 10px;
+.pricing .pricing-item:first-child .pricing-heading {
+  background: #d9d9d9;
+  padding: 5px 10px;
 }
 
-.pricing   .pricing-item:nth-child(3)  .pricing-heading {
-   background: #15580c;
-       padding: 5px 10px;
-} 
+.pricing .pricing-item:nth-child(2) .pricing-heading {
+  background: #853636;
+  padding: 5px 10px;
+}
+
+.pricing .pricing-item:nth-child(3) .pricing-heading {
+  background: #15580c;
+  padding: 5px 10px;
+}
 
 @media (max-width: 991px) {
   .pricing .pricing-item {
@@ -2203,7 +2211,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .pricing .pricing-item .pricing-heading {
   background: #fafafa;
-  /* border-bottom: 1px solid #e5e5e5; */
+  display: flex;
 }
 
 .pricing .pricing-item .pricing-heading .title {
@@ -2213,13 +2221,13 @@ select.form-control:not([size]):not([multiple]) {
 .pricing .pricing-item .pricing-heading .title h6 {
   line-height: 1;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-family: math;
 }
 
-.pricing .pricing-item .pricing-heading .price {
-  /* margin-top: 12px; */
-}
+/* .pricing .pricing-item .pricing-heading .price {
+  margin-top: 12px;
+} */
 
 .pricing .pricing-item .pricing-heading .price h2 {
   font-size: 1rem;
@@ -2232,6 +2240,11 @@ select.form-control:not([size]):not([multiple]) {
 .pricing .pricing-item .pricing-heading .price h2 span {
   font-weight: bold;
 }
+.pricing .pricing-item .pricing-heading .numero {
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin: 0 15px;
+}
 
 .pricing .pricing-item .pricing-body {
   padding: 45px 40px;
@@ -2242,7 +2255,10 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .pricing .pricing-item .pricing-body ul.feature-list li p span {
-  margin-right: 15px;
+  margin-right: 15px;  
+}
+.pricing .pricing-item .pricing-body ul.feature-list li p   {
+    font-family: math;
 }
 
 .pricing .pricing-item .pricing-body ul.feature-list li p span.available {
@@ -2254,7 +2270,8 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .pricing .pricing-item .pricing-body ul.feature-list li:not(:last-child) {
-  margin-bottom: 15px;
+     margin: 5px 0;
+    border-bottom: 1px solid #cbcbcb;
 }
 
 .pricing .pricing-item .pricing-footer {
@@ -2266,32 +2283,38 @@ select.form-control:not([size]):not([multiple]) {
   box-shadow: 0px 0px 30px 0px rgba(11, 29, 66, 0.15);
 }
 
-.pricing .pricing-item.featured .pricing-heading {
-  background: #4ac565;
-  border-bottom: 1px solid #4ac565;
+.pricing .pricing-item.featured-gold .pricing-heading,
+.pricing .pricing-item.featured-gold .pricing-footer a {
+  background: #efbf04;
 }
 
-.pricing .pricing-item.featured .pricing-heading .title h6 {
-  color: #fff;
-  border-bottom: 1px solid #f69351;
+.pricing .pricing-item.featured-silver .pricing-heading,
+.pricing .pricing-item.featured-silver .pricing-footer a {
+  background: #e0e0e0;
 }
 
-.pricing .pricing-item.featured .pricing-heading .price {
-  margin-top: 2px;
+.pricing .pricing-item.featured-bronz .pricing-heading,
+.pricing .pricing-item.featured-bronz .pricing-footer a {
+  background: #ce8946;
 }
 
-.pricing .pricing-item.featured .pricing-heading .price h2 {
+.pricing .pricing-item.featured-platin .pricing-heading,
+.pricing .pricing-item.featured-platin .pricing-footer a {
+  background: #a0b2c6;
+}
+
+.pricing .pricing-item .pricing-heading .price h2 {
   color: #fff;
   font-size: 1.25rem;
   margin-bottom: 0px;
 }
 
-.pricing .pricing-item.featured .pricing-heading .price h2 span {
+.pricing .pricing-item .pricing-heading .price h2 span {
   font-size: 1.25rem;
   font-weight: bold;
 }
 
-.pricing .pricing-item.featured .pricing-heading .price p {
+.pricing .pricing-item .pricing-heading .price p {
   color: #fff;
 }
 
@@ -2310,7 +2333,7 @@ select.form-control:not([size]):not([multiple]) {
 
 @media (max-width: 990px) {
   .pricing.two .pricing-item {
-    margin-bottom: 30px;
+    margin: 0;
   }
 
   .pricing.two .pricing-item .pricing-heading {
@@ -2325,16 +2348,16 @@ select.form-control:not([size]):not([multiple]) {
   font-family: monospace;
 }
 .pricing.two .pricing-item .pricing-heading .price span {
-padding-top: 5px;
-    padding-bottom : 5px;
-    color: #474747;
-    font-family: math;
-    text-align: left;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #474747;
+  font-family: math;
+  text-align: left;
 }
 .pricing.two .pricing-item .pricing-heading .price h2 {
   font-size: 14px;
   font-weight: 400;
-  font-family: "math";
+  font-family: math;
   color: #414141;
   line-height: 1.58;
 }
@@ -2367,6 +2390,72 @@ padding-top: 5px;
 .pricing.two .pricing-item.featured .pricing-heading:before {
   border-color: #4ac565 transparent transparent transparent;
 }
+
+/* -------------FICHE DE LA CAB-------------- */
+
+.pricing.two .schedule-contents {
+  width: 100%;
+  background: white;
+  border-top: 1px solid #e5e5e5;
+      margin: 30px 0;
+}
+
+.pricing.two .title {
+  color: #474747;
+  font-family: math;
+  padding-left: 10px;
+  line-height: 1.1;
+  font-size: 1.5rem;
+  margin: 20px 10px 10px 0;
+  text-transform: uppercase;
+}
+.pricing.two .schedule-contents li.schedule-details {
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-color: #e5e5e5;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.pricing.two .schedule-contents .schedule-details:not(:last-child) {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.pricing.two .schedule-contents li.schedule-details div {
+  display: inline-block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #474747;
+  font-family: math;
+  text-align: left;
+  padding-left: 10px;
+  line-height: 1.1;
+  font-size: 0.9rem;
+}
+
+.pricing.two .schedule-contents ul li .time {
+  width: 30%;
+}
+
+@media (max-width: 480px) {
+  .pricing.two .schedule-contents ul li .time {
+    width: 40%;
+  }
+}
+.pricing.two .schedule-contents ul li .time span {
+  font-weight: bold;
+}
+
+.pricing.two .schedule-contents ul li .venue {
+  width: 45%;
+  border-left: 1px solid #e5e5e5;
+}
+
+.pricing.two .schedule.two .schedule-contents ul li {
+  list-style: none;
+}
+/* -------------FIN FICHE DE LA CAB-------------- */
 
 .sponsors {
   position: relative;
@@ -2420,7 +2509,7 @@ padding-top: 5px;
   height: 480px;
   color: white;
 }
- 
+
 @media (max-width: 480px) {
   .map .address-block {
     width: 100%;
@@ -2451,20 +2540,20 @@ padding-top: 5px;
   color: rgb(61, 61, 61);
   font-style: italic;
   font-size: 0.8rem;
-      line-height: 1.7;
+  line-height: 1.7;
 }
 
 .map .block .post-exerpts {
   position: relative;
-   color: rgb(37, 37, 37);
+  color: rgb(37, 37, 37);
   width: 48%;
-   background:  white;
+  background: white;
   padding: 10px 20px;
-    margin: 1px 0;
+  margin: 1px;
 }
 @media screen and (max-width: 63.9988em) {
-  .map .block .post-exerpts { 
-    width: 98%;  
+  .map .block .post-exerpts {
+    width: 98%;
   }
 }
 
@@ -2497,8 +2586,8 @@ padding-top: 5px;
 
 .map.new .address-block {
   width: 30%;
-  position: relative;  
-  padding: 45px 50px 50px 50px; 
+  position: relative;
+  padding: 45px 50px 50px 50px;
   background: #4ac565;
 }
 
@@ -2513,8 +2602,8 @@ padding-top: 5px;
     position: relative;
   }
   .map.new .address-block {
-  width: 100%; 
-}
+    width: 100%;
+  }
 }
 
 .map.new .register .block {
@@ -3345,7 +3434,7 @@ padding-top: 5px;
   text-align: center;
   width: 20rem;
   margin: 10px 0 0 0;
-  font-family: "math";
+  font-family: math;
 }
 
 .wp-block-key-figures-infos {
@@ -3384,10 +3473,10 @@ padding-top: 5px;
   .block-figures-right .key-figures {
     flex: 0 0 calc(50% - 0.8rem);
     height: 20rem;
-        min-width: 20rem;
-        margin: 10px auto;
+    min-width: 20rem;
+    margin: 10px auto;
   }
-} 
+}
 
 .key-figures-number {
   font-family: archia-bold, Helvetica, Arial, sans-serif;
@@ -3438,9 +3527,16 @@ padding-top: 5px;
 }
 
 .gallery-full .payement h6 {
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 1.4;
+  font-size: 1rem; 
+  line-height: 1.7;
+  border-bottom: 1px solid #a3f9b6;
+  border-top: 1px solid #a3f9b6;
+  padding: 10px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+.gallery-full .payement h6 span { 
+  font-weight: 400;  
 }
 
 .gallery-full .payement h3 {
@@ -3450,7 +3546,7 @@ padding-top: 5px;
 .gallery-full .payement {
   padding-bottom: 80px;
   width: 80%;
-  font-family: "math";
+  font-family: math;
 }
 
 .gallery-full .pricing-item .pricing-heading li {
@@ -3547,6 +3643,7 @@ padding-top: 5px;
 
 .news .container {
   background: white;
+  position: relative;
 }
 
 .news .sponsoring-block {
@@ -3577,6 +3674,12 @@ padding-top: 5px;
   border-style: solid;
   border-color: #e5e5e5;
   font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .news .blog-post .post-content {
+    padding: 10px 30px;
+  }
 }
 
 .news .blog-post .post-content .date {
@@ -3797,9 +3900,15 @@ padding-top: 5px;
   border-bottom: 1px solid #f60;
   margin: 5px 0;
   padding: 5px;
-  font-family: "math";
+  font-family: math;
   font-weight: 500;
 }
+
+.news .post-content ul li p {
+  font-family: math;
+  font-weight: 500;
+}
+
 .news .post-content ul li:first-child {
   border-top: 1px solid #f60;
 }
@@ -4072,14 +4181,13 @@ ul.pagination .active a {
   border-radius: 0;
   border: none;
   margin-bottom: 10px;
-} 
-
-@media (min-width: 992px) {
-    .news-hr .card-body {
-      padding: 0;
-    }  
 }
 
+@media (min-width: 992px) {
+  .news-hr .card-body {
+    padding: 0;
+  }
+}
 
 /* .news-hr .accordion-block #accordion .card:first-child:nth-last-child(3), 
    .news-hr .accordion-block #accordion .card:nth-last-child(3)~.speakers-infos
