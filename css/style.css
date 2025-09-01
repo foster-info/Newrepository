@@ -2906,7 +2906,7 @@ padding: 30px 0;
 }
 
 .single-speaker .block .content-block .details p:not(:last-child) {
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 
 .single-speaker .block .content-block .social-profiles h5 {
@@ -3727,6 +3727,31 @@ padding: 30px 0;
     padding: 10px 30px;
   }
 }
+
+
+.news .blog-post .post-content.featured-gold .date,
+.news .blog-post .post-content.featured-gold .post-title a {
+  background: #efbf04;
+}
+
+.news .blog-post .post-content.featured-silver .date,
+.news .blog-post .post-content.featured-silver .post-title a {
+  background: #e0e0e0; 
+}
+.news .blog-post .post-content.featured-silver .date h4 {
+  color: black;
+}
+
+.news .blog-post .post-content.featured-bronz .date,
+.news .blog-post .post-content.featured-bronz .post-title a {
+  background: #ce8946;
+}
+
+.news .blog-post .post-content.featured-platin .date,
+.news .blog-post .post-content.featured-platin .post-title a {
+  background: #a0b2c6;
+}
+
 
 .news .blog-post .post-content .date {
   position: absolute;
