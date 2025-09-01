@@ -2417,6 +2417,7 @@ select.form-control:not([size]):not([multiple]) {
   list-style: none;
   display: flex;
   align-items: center;
+  padding: 3px 0;
 }
 .pricing.two .schedule-contents .schedule-details:not(:last-child) {
   border-bottom: 1px solid #e5e5e5;
@@ -4175,6 +4176,10 @@ ul.pagination .active a {
   width: 80%;
   max-width: 900px;
 }
+@media (max-width: 480px) {
+  .news-hr .accordion-block{
+       width: 100%;
+  }
 .news-hr .accordion-block #accordion {
 }
 .news-hr .accordion-block #accordion .card {
