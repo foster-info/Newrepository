@@ -1135,7 +1135,7 @@ select.form-control:not([size]):not([multiple]) {
 @media (max-width: 992px) {
   .banner-two {
     padding: 100px 0 0px;
-  }
+  } 
 }
 
 .banner-two .block h1 {
