@@ -511,7 +511,7 @@ select.form-control:not([size]):not([multiple]) {
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
-  -webkit-backface-visibility: hidden;
+  visibility: hidden;
   /* ideally, transition speed should match zoom duration */
   transition: all 0.3s ease-out;
 }
@@ -4271,8 +4271,7 @@ ul.pagination .active a {
     width: 100%;
   }
 }
-.news-hr .accordion-block #accordion {
-}
+ 
 .news-hr .accordion-block #accordion .card {
   border-radius: 0;
   border: none;
