@@ -1140,7 +1140,10 @@ select.form-control:not([size]):not([multiple]) {
 
 .banner-two .block h1 {
   color: #4ac565;
-  font-size: 88px;
+   font-size: 110px;
+    margin-bottom: -10px;
+        border: 1px solid;
+    display: inline-block;
 }
 @media (max-width: 992px) {
   .banner-two .block h1 {
