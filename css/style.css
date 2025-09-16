@@ -1463,7 +1463,7 @@ font-family: 'Montserrat';
 
 .schedule {
   position: relative;
-      border-bottom: 3px solid #004874;
+      /* border-bottom: 3px solid #004874; */
 }
 
 .schedule .schedule-tab {
@@ -1812,7 +1812,8 @@ font-family: 'Montserrat';
 
 .schedule.two .schedule-contents {
   margin-top: 0px;
-  margin-bottom: 0!important;
+  /* margin-bottom: 0!important; */
+  border-bottom: 3px solid #004874;
   padding: 0;
 }
 
@@ -2719,7 +2720,9 @@ font-family: 'Montserrat';
   display: flex;
   flex-wrap: wrap; */
 }
-
+.map.new .block-title { 
+    color: #f9f9f9; 
+}
 
 @media (min-width: 992px) {
     .map.new .container {
@@ -3511,7 +3514,7 @@ font-family: 'Montserrat';
   overflow: hidden;
   padding-top: 10px; 
   background: #f7f7f7;
-  border-bottom: 3px solid #7bc0e9;
+  border-bottom: 3px solid #004874;
 }
 
 .gallery-full .container {
@@ -3619,7 +3622,7 @@ font-family: 'Montserrat';
 }
 .block-figures-left .key-figures:first-child,
 .block-figures-right .key-figures:first-child {
-  background-color: #9d9d9c;
+  background-color: #dc3545;
 }
 
 @media screen and (max-width: 63.9988em) {
@@ -3648,6 +3651,7 @@ font-family: 'Montserrat';
   font-size: 2.6875rem;
   line-height: 1.2;
   margin-bottom: 0;
+  color: whitesmoke;
 }
 
 .wp-block-key-figures-intro {
