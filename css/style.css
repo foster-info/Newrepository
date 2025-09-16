@@ -167,7 +167,8 @@ ul.pagination .active a,
     line-height: 90px;
     bottom: 40%;
     left: -100px;
-    color: #2a8534;
+    /* color: #2a8534; */
+    color: #00ff38;
     opacity: 0.75;
     transform: rotatez(270deg);
 }
@@ -226,7 +227,7 @@ ul.pagination .active a,
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(0deg, #ffffff, #ffffffc7);
+  background: linear-gradient(0deg, #0000002e, #0000002e)
   /* -webkit-transform: skewX(-20deg);
   transform: skewX(-20deg); */
 }
@@ -1140,7 +1141,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .banner-two .block h1 {
-  color: #4ac565;
+  color: #ffffff;
   font-size: 110px;
   margin-bottom: -10px;
   border: 1px solid;
@@ -1161,6 +1162,7 @@ select.form-control:not([size]):not([multiple]) {
   text-transform: uppercase;
   font-size: 74px;
   margin-bottom: 10px;
+  color: white;
 }
 @media (max-width: 992px) {
   .banner-two .block h2 {
@@ -1174,6 +1176,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .banner-two .block h3 {
   font-size: 54px;
+  color: white;
 }
 @media (max-width: 992px) {
   .banner-two .block h3 {
@@ -1185,6 +1188,7 @@ select.form-control:not([size]):not([multiple]) {
   margin-top: 48px;
   font-weight: 400;
   margin-bottom: 60px;
+  color: white;
 }
 @media (max-width: 992px) {
   .banner-two .block h6 {
@@ -1466,7 +1470,7 @@ select.form-control:not([size]):not([multiple]) {
 @media (max-width: 767px) {
   .schedule .schedule-tab ul li.nav-item {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
   }
 }
 
@@ -1701,7 +1705,14 @@ select.form-control:not([size]):not([multiple]) {
   -ms-flex-pack: center;
   justify-content: center;
   margin-top: 80px;
+  padding-right: 10px;
 }
+@media (max-width: 991px) {
+.schedule.two .schedule-tab { 
+    padding-right: 0px;
+}
+}
+
 
 .schedule.two .schedule-tab ul li.nav-item {
   margin-right: 0;
@@ -1710,14 +1721,14 @@ select.form-control:not([size]):not([multiple]) {
 
 @media (max-width: 991px) {
   .schedule.two .schedule-tab ul li.nav-item {
-    margin-right: 10px;
+    margin-right: 0;
   }
 }
 
 @media (max-width: 767px) {
   .schedule.two .schedule-tab ul li.nav-item {
-    width: 100%;
-    margin-bottom: 10px;
+    width: 25%;
+    margin-bottom: 1px;
   }
 }
 
@@ -1787,7 +1798,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .schedule.two .schedule-contents {
-  margin-top: 30px;
+  margin-top: 0px;
   margin-bottom: 30px;
   padding: 0;
 }
@@ -2018,6 +2029,7 @@ select.form-control:not([size]):not([multiple]) {
   text-align: center;
   max-width: 80%;
   position: relative;
+  margin-top: 5%;
 }
 
 .ticket-feature .section-title .informationssup p {
@@ -2034,8 +2046,14 @@ select.form-control:not([size]):not([multiple]) {
 
 .ticket-feature .block {
   position: relative;
-  padding-top: 150px;
-  padding-bottom: 110px;
+  padding: 50px; 
+  height: 100%;
+}
+
+@media (max-width: 480px) {
+ .ticket-feature .block {
+      padding: 50px 10px;
+}
 }
 
 .ticket-feature .block a {
@@ -2101,9 +2119,9 @@ select.form-control:not([size]):not([multiple]) {
 
 .ticket-feature .block-2 {
   position: relative;
-  padding: 50px 10%;
+  /* padding: 20px; */
   height: 100%;
-  background: #4ac565;
+  /* background: #4ac565; */
 }
 
 .ticket-feature .block-2 [class*="col-"]:first-child {
@@ -2155,7 +2173,7 @@ select.form-control:not([size]):not([multiple]) {
   font-weight: 400;
   text-transform: uppercase;
 }
-.ticket-feature .block-2:after {
+/* .ticket-feature .block-2:after {
   content: "";
   position: absolute;
   right: 100%;
@@ -2166,7 +2184,7 @@ select.form-control:not([size]):not([multiple]) {
   border-style: solid;
   border-width: 0 0 1000px 300px;
   border-color: transparent transparent #4ac565 transparent;
-}
+} */
 
 @media (max-width: 767px) {
   .ticket-feature .block-2:after {
@@ -2675,6 +2693,12 @@ select.form-control:not([size]):not([multiple]) {
 .map.new .register .block {
   padding: 80px 10%;
 }
+@media (max-width: 767px) {
+  .map.new .register .block {
+  padding: 80px 0%;
+}
+}
+
 
 .map.new .register .block .title {
   position: relative;
@@ -3046,6 +3070,7 @@ select.form-control:not([size]):not([multiple]) {
 .speakers-full-width .speakers-infos:first-child:nth-last-child(3),
 .speakers-full-width .speakers-infos:nth-last-child(3) ~ .speakers-infos {
   flex: 1 0 100%;
+  margin-top: 10px;
 }
 .speakers-full-width .speakers-infos:first-child:nth-last-child(3):hover,
 .speakers-full-width .speakers-infos:nth-last-child(3) ~ .speakers-infos:hover {
@@ -3055,16 +3080,18 @@ select.form-control:not([size]):not([multiple]) {
 @media (min-width: 992px) {
   .speakers-full-width .speakers-infos:first-child:nth-last-child(3),
   .speakers-full-width .speakers-infos:nth-last-child(3) ~ .speakers-infos {
-    flex: 0 0 50%;
-    max-inline-size: 50%;
+    flex: 0 0 33%;
+    max-inline-size: 33%;
+            margin-bottom: 10px;
+            max-width: 700px;
   }
 }
 
 @media (min-width: 1200px) {
   .speakers-full-width .speakers-infos:first-child:nth-last-child(3),
   .speakers-full-width .speakers-infos:nth-last-child(3) ~ .speakers-infos {
-    flex: 0 0 33.33%;
-    max-inline-size: 33.33%;
+    /* flex: 0 0 33.33%;
+    max-inline-size: 33.33%; */
   }
 }
 
