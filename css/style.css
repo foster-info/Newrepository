@@ -1161,7 +1161,7 @@ select.form-control:not([size]):not([multiple]) {
   text-transform: uppercase;
   font-size: 74px;
   margin-bottom: 10px;
-  color: white;
+  color: #7bc0e9;
 }
 @media (max-width: 992px) {
   .banner-two .block h2 {
@@ -1175,7 +1175,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .banner-two .block h3 {
   font-size: 54px;
-  color: white;
+  color: #7bc0e9;
 }
 @media (max-width: 992px) {
   .banner-two .block h3 {
@@ -1457,6 +1457,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .schedule {
   position: relative;
+      border-bottom: 3px solid #004874;
 }
 
 .schedule .schedule-tab {
@@ -1912,13 +1913,26 @@ select.form-control:not([size]):not([multiple]) {
   .schedule-contents
   .schedule-item
   li.schedule-details:not(:last-child) {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #f7f7f7;
+
+}
+.schedule.two
+  .schedule-contents
+  .schedule-item
+  li.schedule-details:nth-child(n+1) {
+  background: white;
+}
+.schedule.two
+  .schedule-contents
+  .schedule-item
+  li.schedule-details:nth-child(even) {
+ background: #f7f7f7;
 }
 
 .schedule.two .schedule-contents .schedule-item li.schedule-details .block {
   text-align: left;
   padding: 0 0 0 20px;
-  background: #fff;
+  background: transparent;
   width: 100%;
   transition: 0.2s ease-in;
 }
@@ -2423,7 +2437,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
    .pricing.two {
-       background: #004874;
+       background: #00619b;
            margin: 0 10px 10px;
     } 
 
@@ -3491,6 +3505,7 @@ select.form-control:not([size]):not([multiple]) {
   overflow: hidden;
   padding-top: 10px; 
   background: #f7f7f7;
+  border-bottom: 3px solid #7bc0e9;
 }
 
 .gallery-full .container {
@@ -3502,7 +3517,8 @@ select.form-control:not([size]):not([multiple]) {
     }
 }
 .block-title {
-  color: #00304d;
+  /* color: #00304d; */
+  color:#65a2c7;
   display: inline-block;
   font-family: archia-semibold, Helvetica, Arial, sans-serif;
   font-size: 2.25rem;
@@ -4337,6 +4353,12 @@ ul.pagination .active a {
   margin-right: 10px;
 }
 
+
+ 
+.news-hr  {
+border-bottom: 3px solid #7bc0e9;
+}
+
 .news-hr .news-post-hr {
   /* display: -webkit-box;
   display: -ms-flexbox; */
@@ -4554,7 +4576,7 @@ ul.pagination .active a {
 }
 
 .about {
-  /* padding: 0px 0; */
+border-bottom: 3px solid #7bc0e9; 
 }
 @media (min-width: 992px) {
     .about .container {
