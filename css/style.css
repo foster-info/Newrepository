@@ -655,12 +655,12 @@ select.form-control:not([size]):not([multiple]) {
   /* border-right: 1px solid #e5e5e5; */
 }
 .main-nav .navbar-brand img {
-  max-height: 60px;
+  max-height: 40px;
 }
 
 @media (max-width: 1024px) {
   .main-nav .navbar-brand {
-    padding: 20px 30px;
+    padding: 10px 30px;
   }
 }
 
@@ -832,6 +832,12 @@ select.form-control:not([size]):not([multiple]) {
     border-left: none;
   }
 }
+
+.navbar-toggler {
+font-family: 'Montserrat';
+    color: #004874; 
+}
+
 
 .navbar-toggler:focus,
 .navbar-toggler:hover {
