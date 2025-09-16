@@ -2419,6 +2419,7 @@ select.form-control:not([size]):not([multiple]) {
 
    .pricing.two {
        background: #a82237;
+           margin: 0 10px 10px;
     } 
 
 @media (min-width: 992px) {
@@ -2512,10 +2513,9 @@ select.form-control:not([size]):not([multiple]) {
 .pricing.two .title {
   color: #ffffff;
   font-family: math;
-  padding-left: 10px;
+  padding: 15px 0;
   line-height: 1.1;
-  font-size: 1.5rem;
-  margin: 20px 10px 10px 0;
+  font-size: 1.5rem; 
   text-transform: uppercase;
 }
 .pricing.two .schedule-contents li.schedule-details {
@@ -4347,7 +4347,7 @@ ul.pagination .active a {
 
 .news-hr .accordion-block {
   margin: auto;
-  width: 80%;
+  /* width: 80%; */
   max-width: 900px;
 }
 @media (max-width: 480px) {
