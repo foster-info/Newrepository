@@ -3692,11 +3692,9 @@ select.form-control:not([size]):not([multiple]) {
   font-weight: 300;
   color: #fff;
 }
-.gallery-full .pricing-item .pricing-heading li span {
-  /* font-size: 1.15rem; */
-  font-weight: 600;
-  /* color: #fff; */
-}
+.gallery-full .pricing-item .pricing-heading li span { 
+  font-weight: 600; 
+} 
 
 .gallery-full .image {
   position: relative;
